@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-bot.login('NDE5OTQ1OTgwNTQ5Mzk4NTM4.DX3g5g.I3fbQwDjgmWnwcWX-FYl9POpyoo')
+bot.login('process.env.TOKEN')
 
 bot.on('ready', () => {
 	console.log(`Logged in as ${bot.user.tag}!`);
