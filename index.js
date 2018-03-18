@@ -112,7 +112,16 @@ bot.on('message', msg => {
 		msg.reply('Gitanooooo, la falaise d\'où tombent les blaireaux....');
 	}
 	else if (msg.content === '!jolapignole') {
-		msg.reply('https://lc.cx/dsRz');
+		var i = getRandomInt(3);
+		if (i == 0) {
+			msg.reply('https://lc.cx/dsRz');
+		}
+		else if (i == 1) {
+			msg.reply('Jo aime ..............\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nla bite');
+		}
+		else if (i == 2) {
+			msg.reply('Jo aime ..............\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nle gland');
+		}
 	}
 
 	else if (msg.content === '!striptease') {
