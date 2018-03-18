@@ -170,7 +170,25 @@ bot.on('message', msg => {
 	}
 
 	else if (msg.content === '!striptease') {
-		msg.reply('https://www.google.fr/search?q=star+wars+sexy+boba+fett&source=lnms&tbm=isch&sa=X&ved=0ahUKEwju1fP3w-LZAhUCK8AKHe28CNYQ_AUICigB&biw=1440&bih=755');
+		var i = getRandomInt(6);
+		if (i == 0) {
+			msg.reply('https://i.pinimg.com/564x/8b/07/0b/8b070b216574b4f7eeabc1806d4a57c9.jpg');
+		}
+		else if (i == 1) {
+			msg.reply('https://i.pinimg.com/564x/4b/e0/20/4be0203ede77ecebc92a2bb420a536d7.jpg');
+		}
+		else if (i == 2) {
+			msg.reply('https://i.pinimg.com/564x/0d/b5/c1/0db5c14d580e38a4acfa6651f1441297.jpg');
+		}
+		else if (i == 3) {
+			msg.reply('https://i.pinimg.com/originals/63/51/52/6351524cc1c6e254dbc3b2c95508a0d9.jpg');
+		}
+		else if (i == 4) {
+			msg.reply('http://static.hitek.fr/img/actualite/55f661bf61960b1247d81710e12697e0.jpg');
+		}
+		else if (i == 5) {
+			msg.reply('http://costumefail.com/wordpress/wp-content/uploads/2012/06/Boba-Fett-Sexy-Costume-08.jpg');
+		}
 	}
 	else if (msg.content === '!prout') {
 		msg.reply('PROUT !');
