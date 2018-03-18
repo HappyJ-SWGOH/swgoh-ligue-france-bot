@@ -49,7 +49,7 @@ bot.on('message', msg => {
 		msg.reply('Voici une liste non exhaustive des teams pour soloter le rancor : \n - Wedge (L) Jyn Biggs Bistan Cassian \n - Zador (L) Nihilus Sidious Tarkin TFP \n - Zador (L) Nihilus Tarkin TFP Thrawn \n - Zador (L) Thrawn Tarkin Bistan Jyn \n - Zador (L) Jyn Bistan Tarkin Nihilus \n - Zador (L) Jyn Bistan Tarkin Cassian');
 	}
 	else if (msg.content === '!teamchar') {
-		msg.reply('P1 ! \n - Kylo Ren Zeta seulement \nP2 \n    Capitaine Phasma Zeta, Kylo Ren Zeta, Pilote de chasseur TIE du Premier Ordre Zeta, Officier du Premier Ordre, Stormtrooper du Premier Ordre. \n    HK-47, Chef Nebit, Ingénieur Jawa, IG-88, R2-D2\n    CT-2224 Cody Zeta, CT-5555 Cinqs, CT-21-0406 « Echo », Sergent Clone, CT-7567 « Rex » Zeta\n    Wedge Antille, Biggs, R2D2, Han Solo, Luke Skywalker\n    Wedge Antille, Biggs, Leïa (ou lando) , Amiral, Rey\nP3 \n    Chef Chirpa, Empereur Palpatine, Ancien Ewok, Han en stormtrooper, Garde royal. \nP4 \n    Rebelles Wedge Antilles (leader).\n Source : https://growofgalaxy.wordpress.com/comment-vaincre-le-raid-assaut-de-char/');
+		msg.reply('P1 \n - Kylo Ren Zeta seulement \nP2 \n    Capitaine Phasma Zeta, Kylo Ren Zeta, Pilote de chasseur TIE du Premier Ordre Zeta, Officier du Premier Ordre, Stormtrooper du Premier Ordre. \n    HK-47, Chef Nebit, Ingénieur Jawa, IG-88, R2-D2\n    CT-2224 Cody Zeta, CT-5555 Cinqs, CT-21-0406 « Echo », Sergent Clone, CT-7567 « Rex » Zeta\n    Wedge Antille, Biggs, R2D2, Han Solo, Luke Skywalker\n    Wedge Antille, Biggs, Leïa (ou lando) , Amiral, Rey\nP3 \n    Chef Chirpa, Empereur Palpatine, Ancien Ewok, Han en stormtrooper, Garde royal. \nP4 \n    Rebelles Wedge Antilles (leader).\n Source : https://growofgalaxy.wordpress.com/comment-vaincre-le-raid-assaut-de-char/');
 	}
 	else if (msg.content === '!teamtrium') {
 		msg.reply('A venir selon les détails que nous trouverons. Restez connectés !');
@@ -94,15 +94,15 @@ bot.on('message', msg => {
 		msg.reply('HappyJ est mon créateur, Dieu est le créateur, donc HappyJ serait Dieu ?');
 	}
 	else if (msg.content === '!darklaul') {
-		var i = getRandomInt(2);
+		var i = getRandomInt(3);
 		if (i == 0) {
 			msg.reply('Avé grand chef !');
 		}
 		else if (i == 1) {
 			msg.reply('Inclinez-vous devant le grand chef !');
 		}
-		else {
-			msg.reply('ERREUR FATALE : Autodestruction dans 5 secondes.... biiiiiip....');
+		else if (i == 2) {
+			msg.reply('Le seul homme à attaquer le char P1....');
 		}
 	}
 	else if (msg.content === '!c4po') {
@@ -112,16 +112,25 @@ bot.on('message', msg => {
 		msg.reply('Gitanooooo, la falaise d\'où tombent les blaireaux....');
 	}
 	else if (msg.content === '!jolapignole') {
-		var i = getRandomInt(3);
+		var i = getRandomInt(5);
 		if (i == 0) {
 			msg.reply('https://lc.cx/dsRz');
 		}
 		else if (i == 1) {
-			msg.reply('Jo aime ..............\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nla bite');
+			msg.reply('Jo aime ..............\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nla bite');
 		}
 		else if (i == 2) {
-			msg.reply('Jo aime ..............\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nle gland');
+			msg.reply('Jo aime ..............\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nle gland');
 		}
+		else if (i == 3) {
+			msg.reply('Jobite, jobarre');
+		}
+		else if (i == 4) {
+			msg.reply('http://m.memegen.com/zth7p0.jpg');
+		}
+	}
+	else if (msg.content === '!scyla') {
+		msg.reply('Je me chie dans la main et je te claque la gueule');
 	}
 
 	else if (msg.content === '!striptease') {
@@ -157,6 +166,6 @@ bot.on('message', msg => {
 });
 
 // functions 
-var getRandomInt = function(max) {
+function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
