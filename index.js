@@ -60,7 +60,43 @@ bot.on('message', msg => {
 		msg.reply('Salut face de fion !');
 	}
 	else if (msg.content === '!bonjour') {
-		msg.reply('Bien le bonjour');
+		var i = getRandomInt(7);
+		if (i == 0) {
+			msg.reply('Coucou');
+		}
+		else if (i == 1) {
+			msg.reply('Coucou, tu veux voir ma bite ?');
+		}
+		else if (i == 2) {
+			msg.reply('Bien le bonjour');
+		}
+		else if (i == 3) {
+			msg.reply('Hello !');
+		}
+		else if (i == 4) {
+			msg.reply('Yo posto !!!');
+		}
+		else if (i == 5) {
+			msg.reply('Je sème du plomb, tête de con !.... Euh bonjour :)');
+		}
+		else if (i == 6) {
+			msg.reply('Bonjour. Appelle moi au 06 45 10 39 40 pour un show sexy !');
+		}
+	}
+	else if (msg.content === '!cava') {
+		var i = getRandomInt(4);
+		if (i == 0) {
+			msg.reply('Oui et toi ?');
+		}
+		else if (i == 1) {
+			msg.reply('Non...');
+		}
+		else if (i == 2) {
+			msg.reply('Merde, va chier dans ta caisse !!!');
+		}
+		else if (i == 3) {
+			msg.reply('Ça allait mieux avant que tu me parles..');
+		}
 	}
 	else if (msg.content === '!fuck') {
 		msg.reply('Fuck you too... (U2)');
